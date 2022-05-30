@@ -16,7 +16,7 @@ export const Sell: FC = () => {
 
     function getSell() {
         
-        sell({ auctionHouse: auctionHouseAddress, buyPrice: price, mint: mintAddress, tokenSize: '1', wallet : wallet }).then(x => {
+        sell({ auctionHouse: 'HShgQ3HeNGdSBWGvGvY8cqKN4WJAfjbAjYgsENYCDKpL', buyPrice: price, mint: mintAddress, tokenSize: '1', wallet : wallet }).then(x => {
             alert('Create Sell Action'+'Account'+x.account+'MintAddress'+x.mintAddress+'Price'+x.price);
         })
     }
